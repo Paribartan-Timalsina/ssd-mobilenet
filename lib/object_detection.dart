@@ -116,7 +116,7 @@ class ObjectDetection {
 
     log('Outlining objects...');
     for (var i = 0; i < numberOfDetections; i++) {
-      if (scores[i] > 0.01) {
+      if (scores[i] > 0.3) {
         // Rectangle drawing
         img.drawRect(
           imageInput,
